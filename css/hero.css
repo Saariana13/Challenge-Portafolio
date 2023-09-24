@@ -1,0 +1,123 @@
+.hero{
+    display: flex;
+    align-items: flex-end;
+    padding-top: 0rem;
+    padding-bottom: 60px;
+    background-color: #ffffff;
+    justify-content: center;
+}
+
+.hero__foto{
+    width: 21rem;
+    height: 25rem;
+    border-radius: 100%;
+}
+
+.hero__contenedor{
+    width: 50rem;
+}
+
+.hero__titulo{
+    font-size: 3.25rem;
+    font-weight: 700;
+    line-height: 1.1;
+    padding-bottom: 20px;
+    background-image: linear-gradient(to left, #FFA6A6 40%, #f9dec9);
+    background-size: 100%;
+    padding-left: 25px;
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+}
+
+
+.hero__texto{
+    color: #272635;
+    font-size: 1.25rem;
+    line-height: 1.2;
+    margin-bottom: 50px;
+    padding-left: 25px;
+    margin-top: -50px;
+}
+
+.hero__social{
+    display: flex;
+    gap: 2rem;
+}
+
+.hero__item, .hero__link{
+    display: inline-block;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+    padding: .5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #272635;
+}
+
+.hero__link i{
+    font-size: 1.5rem;
+    padding-left: 10px;
+}
+
+.hero__link.hero__link--instagram{
+    background: #ffdccc;
+    transition: all .3s ease-in-out;
+}
+
+.hero__link.hero__link--instagram:hover{
+    background: #FFBCB5;
+    transition: all .3s ease-in-out;
+}
+
+.hero__link.hero__link--linkedin, 
+.hero__link.hero__link--github{
+    background: #FFBCB5;
+    transition: all .3s ease-in-out;
+}
+
+.hero__link.hero__link--linkedin:hover, 
+.hero__link.hero__link--github:hover{
+    background: #FFBCB5;
+    transition: all .3s ease-in-out;
+}
+
+
+
+@media screen and (max-width: 1025px){
+    .hero{
+        flex-wrap: wrap-reverse;
+    }
+
+    .hero__foto{
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 769px){
+    .hero__titulo{
+        font-size: 2.8rem;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .hero__contenedor{
+        width: 100%;
+    }
+
+    .hero__titulo{
+        font-size: 2.6rem;
+    }
+    
+    .hero__social{
+        flex-wrap: wrap;
+    }
+
+    .hero__foto{
+        width: 100%;
+        height: auto;
+    }
+}
